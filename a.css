@@ -1,11 +1,15 @@
 
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .logo{
-  margin-top: 3;  
+  margin-top: 0;  
   margin-left:3%;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   zoom: 1; /* Fix for IE7 */
   *display: inline; /* Fix for IE7 */;
 }
@@ -23,10 +27,14 @@
   margin-right: auto;
   margin-left: auto;
   overflow: auto;
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
 }
 .snip1502 *,
 .snip1502 *:after {
   box-sizing: border-box;
+   border-radius: 5px;
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
@@ -104,6 +112,7 @@
   z-index: -1;
 }
 .menubar{
+
     height: 50;
     left: 0;
     float: right;
@@ -116,7 +125,8 @@
     min-width=100%;
     z-index:10;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+
 }
 .container{
   padding-right: 15px;
@@ -131,6 +141,17 @@
   padding-top: 53px;
   padding-bottom: 51px;
   text-align: center;
+
+}
+.up{
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 65px;
+}
+.up-second{
+  font-family: Open Sans;
+  font-size: 19px;
+  line-height: 22px;
 }
 
 body {  
