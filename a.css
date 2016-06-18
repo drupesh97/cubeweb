@@ -1,13 +1,21 @@
 
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+.logo{
+  margin-top: 5;  
+  margin-left:3%;
+}
 .snip1502 {
-  font-family: 'Work Sans', Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
 }
-
+.menu{
+  padding-left: 30%;
+  padding-right: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
 .snip1502 *,
 .snip1502 *:after {
   box-sizing: border-box;
@@ -16,6 +24,7 @@
 }
 
 .snip1502 li {
+  left: 10;
   display: inline-block;
   list-style: outside none none;
   margin: 0.5em 0.6em;
@@ -25,7 +34,10 @@
 
 .snip1502 a {
   backface-visibility: hidden;
-  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Roboto;
+  color: #e6563e;
   display: block;
   line-height: 2.2em;
   padding: 0 1.4em;
@@ -33,7 +45,7 @@
   text-decoration: none;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  background-color: #667273;
+  background-color: #333;
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -55,6 +67,10 @@
   transform-origin: 100% 50%;
 }
 
+.logo_small{
+  vertical-align: middle;
+}
+
 .snip1502 li:hover a,
 .snip1502 li.current a {
   -webkit-transform: translate(50%) rotateY(90deg);
@@ -74,21 +90,50 @@
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-  opacity: 0.4;
-  filter:alpha(opacity=40);
+  opacity: 0.15;
+  filter:alpha(opacity=15);
   /* Set up proportionate scaling*/
   width: 100%;
   height: auto;
-	
+    
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 /* Demo purposes only */
-	
-body {	
-  background-color: #212121;
-  /*padding: 40px 0;*/
+.menubar{
+    height: 50  ;
+    left: 0;
+    float: right;
+    width:100%;
+    background-color:#333;
+    padding:0;
+    vertical-align: top;
+    list-style-type:none;
+    overflow:hidden;
+    min-width=100%;
+    z-index:10;
+    margin: 0 auto;
+    position: relative;
+}
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color:#ffffff;
+}
+.page_section header {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 53px;
+  padding-bottom: 51px;
+  text-align: center;
 }
 
+body {  
+  background-color: #212121;
+
+}
