@@ -1,0 +1,94 @@
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.snip1502 {
+  font-family: 'Work Sans', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.snip1502 *,
+.snip1502 *:after {
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.snip1502 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 0.6em;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+
+.snip1502 a {
+  backface-visibility: hidden;
+  color: #ffffff;
+  display: block;
+  line-height: 2.2em;
+  padding: 0 1.4em;
+  position: relative;
+  text-decoration: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background-color: #667273;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.snip1502 a:after {
+  background-color: #5c122e;
+  color: transparent;
+  content: attr(data-hover);
+  top: 0%;
+  line-height: 2.2em;
+  position: absolute;
+  right: 100%;
+  width: 100%;
+  -webkit-transform: translateX(0%) rotateY(-90deg);
+  transform: translateX(0%) rotateY(-90deg);
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.snip1502 li:hover a,
+.snip1502 li.current a {
+  -webkit-transform: translate(50%) rotateY(90deg);
+  transform: translate(50%) rotateY(90deg);
+  background-color: #1e2222;
+  color: transparent;
+}
+
+.snip1502 li:hover a:after,
+.snip1502 li.current a:after {
+  background-color: #b12358;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.splash-video {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  opacity: 0.4;
+  filter:alpha(opacity=40);
+  /* Set up proportionate scaling*/
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* Demo purposes only */
+	
+body {	
+  background-color: #212121;
+  /*padding: 40px 0;*/
+}
+
