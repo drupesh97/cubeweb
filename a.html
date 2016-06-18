@@ -1,10 +1,29 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>SSN Cube Open</title>
 	<link rel="shortcut icon" href="img/logocut1.gif" sizes="16x16"/>
-	 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-	 <link href="a.css" rel="stylesheet" type="text/css" />
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="a.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 	<video class="splash-video" autoplay="" loop="" muted>
 		<source src="img/video.mp4" type="video/mp4"></source>
 	</video>	
@@ -28,6 +47,7 @@
 		</nav>
 	</div>
 
+
 	<!--> Countdown Timer<-->
 
 	<!--div id="countdown" >
@@ -49,22 +69,42 @@
         </header>
     </section>
 
-    <section class="page_section pattern-bg" id="About">  
+    <section class="page_section pattern-bg" id="Events">  
         <header>
             <div class="container">
-            	<h2 style="" class="up">About the Competition</h2>
+            	<h2 style="" class="up">Events</h2>
             	<br><br><br><br>
-            	<p class="up-second" style="">The SSN Cube Open 2016, organised by SSNCE Chennai will be held on 05-06 August 2016.<br><br>SSN CUBE OPEN 2016, organised by department of mathematics,SSN college of engineering will be held on 4-6 august 2016. <br><br>The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should
-				be familiar with the regulations.<br><br> The competition is open to all
-				competitors regardless of experience and skill with the Rubik&#39;s Cube,
-				but certain event-based time limits will be in place as explained on the
-				events tab.
+            	<p class="up-second" style="">1)3 x 3 <br>2)3 x 3 Blindfolded <br>3) 4 x 4 <br>
+            		4)4 x 4 Blindfolded <br> 5)3 x 3 One handed <br>
 				</p>
             </div>               
         </header>
     </section>
 
-    	<!-->Google Map API <-->
-        <!--script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:700px;width:1200px;'><div id='gmap_canvas' style='height:700px;width:1200px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(12.75099805176065,80.1970806025391),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.75099805176065,80.1970806025391)});infowindow = new google.maps.InfoWindow({content:'<strong>SSN College and Enginerring</strong><br>Old Mahabalipuram Road, Kalavakkam, Tamil Nadu 603110, India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script-->
+    <section class="page_section pattern-bg" id="Schedule">  
+        <header>
+            <div class="container">
+            	<h2 style="" class="up">Schedule</h2>
+            	<br><br><br>
+            	<p class="up-second" style="">
+            		Link for Schedule <a href="www.google.com"><u>Schedule Document</u> </a>
+				</p>
+            </div>               
+        </header>
+    </section>	
+
+    <section class="page_section pattern-bg" id="Venue">  
+        <header>
+            <div class="container">
+            	<h2 style="" class="up">Venue</h2>
+            	<br><br><br>
+            	<p class="up-second" style="">
+            		
+				</p>
+				<!-->Google Map API <-->
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:700px;width:1200px;'><div id='gmap_canvas' style='height:700px;width:1200px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsandcondiitionssample.com">terms and conditions generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(12.75099805176065,80.1970806025391),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.75099805176065,80.1970806025391)});infowindow = new google.maps.InfoWindow({content:'<strong>SSN College and Enginerring</strong><br>Old Mahabalipuram Road, Kalavakkam, Tamil Nadu 603110, India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            </div>               
+        </header>
+    </section>	
 </body>
 </html>
