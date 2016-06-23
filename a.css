@@ -2,6 +2,19 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#countdown{
+  position: relative;
+    transform: translateY(50%);
+}
+#bg {
+  min-width: 100%;
+  opacity: 0.15;
+  filter:alpha(opacity=15);
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: -1000;
+}
 .logo{
   margin-top: 0;  
   margin-left:3%;
@@ -97,21 +110,7 @@
   cursor: pointer;
 }
 
-.splash-video {
-  min-height: 100%;
-  min-width: 1024px;
-  opacity: 0.15;
-  filter:alpha(opacity=15);
-  width: 100%;
-  height: auto;
-    
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 .menubar{
-
     height: 0;
     float: right;
     width:100%;
@@ -123,6 +122,9 @@
     margin: 0;
     position: fixed;
 
+}
+#About {
+  opacity: 1;
 }
 .container{
   padding-right: 15px;
@@ -145,9 +147,39 @@
   font-size: 65px;
 }
 .up-second{
+  padding-left: 50px;
   font-family: Open Sans;
   font-size: 19px;
   line-height: 22px;
+}
+
+.gm-style-iw{
+  color: #212121;
+}
+
+#About video{
+  min-width: 100%;
+  opacity: 0.15;
+  filter:alpha(opacity=15);
+  width: 100%;
+  height: auto;
+    
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-size: contain;
+}
+
+#Events {
+  height: 500px;
+  color: white;
+  font-size: 2em;
+  background-color: #ffffff;
+  opacity: 1;
+}
+#Events .container{
+  color: #000000;
 }
 
 body {  
