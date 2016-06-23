@@ -5,6 +5,44 @@
 @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Jura);
+@import url(https://fonts.googleapis.com/css?family=Mota+Italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+#ppp{
+  height: 100vh;
+  min-height: 100vh;
+  z-index: -1000;
+}
+.bgim{
+  opacity: 0.07;
+  z-index: 10000000;
+  position: absolute;
+  background-size: cover;
+  width: 40%;
+  left: 34%;
+  bottom: 30%;
+}
+.lpf{
+  font-family: Montserrat;
+  font-size: 45px;
+}
+.next_section {
+    width: 54px;
+    height: 54px;
+    background: url(./img/next.png);
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0px auto 0;
+    position: relative;
+}
+.lp{
+  text-align: center;
+  background-color: #E6663C;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -10000;
+}
 #countdown{
   position: relative;
     transform: translateY(50%);
@@ -135,8 +173,8 @@
 .page_section header {
   width: 100%;
   overflow: auto;
-  padding-top: 53px;
-  padding-bottom: 51px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   text-align: center;
 
 }
@@ -157,23 +195,21 @@
 }
 
 #video_container1 {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: url("./img/video.mp4");
+  height: 100%;
+    min-height:100%;
+    width: 100%;
+    min-width: 100%;
 }
+
 #About video{
-  min-width: 100%;
+ min-height: 100%;
   opacity:0.15;
   width: 100%;
   height: auto;
-    
+    min-width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
+  z-index:-100;
+  left:0;
   background-size: cover;
 }
 #Events {
@@ -197,8 +233,11 @@
     margin-right: auto;
 }
 
-
+h1{
+  margin-bottom: -10px;
+}
 body {  
   background-color: #212121;
-
+  height: 100%;
+  width:100%;
 }
