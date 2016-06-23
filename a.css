@@ -2,27 +2,23 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Jura);
 #countdown{
   position: relative;
     transform: translateY(50%);
 }
-#bgi {
-  min-width: 100%;
-  opacity: 0.05;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  z-index: -1001;
-} 
 .logo_small{
+  float: left;
   margin-top: 0;  
-  margin-left:3%;
+  /*margin-left:3%;*/
   display: inline-block;
   vertical-align: top;
-  position: fixed;
-  top: 25px;
+  position: absolute;
+ top: 25px;
   transform: translateY(-50%);
-  zoom: 1; /* Fix for IE7 */
+  zoom: 1; Fix for IE7  
   z-index:1000001;
   display: inline; /* Fix for IE7 */;
 }
@@ -32,7 +28,8 @@
   text-transform: uppercase;
   font-weight: 400;
 }
-.menu{
+.menu1{
+  width=100%;
   float: right;
   vertical-align: top;
   padding-left: 10;
@@ -113,14 +110,14 @@
 .menubar{
     height: 0;
     float: right;
-    width:100%;
+    width:100%; 
     background-color:#333;
     padding:25px ;
     overflow:auto;
     min-width=100%;
     z-index:101;
     margin: 0;
-    position: fixed;
+    position: absolute;
 
 }
 #About {
@@ -159,6 +156,14 @@
   color: #212121;
 }
 
+#video_container1 {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: url("./img/video.mp4");
+}
 #About video{
   min-width: 100%;
   opacity:0.15;
@@ -169,7 +174,7 @@
   top: 0;
   left: 0;
   z-index: -100;
-  background-size: contain;
+  background-size: cover;
 }
 #Events {
   height: 600px;
