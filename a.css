@@ -6,25 +6,25 @@
   position: relative;
     transform: translateY(50%);
 }
-#bg {
+#bgi {
   min-width: 100%;
-  opacity: 0.15;
-  filter:alpha(opacity=15);
+  opacity: 0.05;
   width: 100%;
   height: auto;
   position: fixed;
-  z-index: -1000;
-}
-.logo{
+  z-index: -1001;
+} 
+.logo_small{
   margin-top: 0;  
   margin-left:3%;
   display: inline-block;
   vertical-align: top;
-  position: relative;
-  top: 50%;
+  position: fixed;
+  top: 25px;
   transform: translateY(-50%);
   zoom: 1; /* Fix for IE7 */
-  *display: inline; /* Fix for IE7 */;
+  z-index:1000001;
+  display: inline; /* Fix for IE7 */;
 }
 
 .snip1502 {
@@ -118,13 +118,15 @@
     padding:25px ;
     overflow:auto;
     min-width=100%;
-    z-index:9000;
+    z-index:101;
     margin: 0;
     position: fixed;
 
 }
 #About {
   opacity: 1;
+  height:600px;
+  z-index:100;
 }
 .container{
   padding-right: 15px;
@@ -159,8 +161,7 @@
 
 #About video{
   min-width: 100%;
-  opacity: 0.15;
-  filter:alpha(opacity=15);
+  opacity:0.15;
   width: 100%;
   height: auto;
     
@@ -170,13 +171,20 @@
   z-index: -100;
   background-size: contain;
 }
-
+#gmap_canvas{
+    margin: auto;
+    width: 50%;
+    border: 1px solid green;
+}
 #Events {
-  height: 500px;
+  height: 600px;
   color: white;
   font-size: 2em;
   background-color: #ffffff;
   opacity: 1;
+  position:relative;
+  top:30%;
+  
 }
 #Events .container{
   color: #000000;
