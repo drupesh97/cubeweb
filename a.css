@@ -171,11 +171,6 @@
   z-index: -100;
   background-size: contain;
 }
-#gmap_canvas{
-    margin: auto;
-    width: 50%;
-    border: 1px solid green;
-}
 #Events {
   height: 600px;
   color: white;
@@ -184,11 +179,19 @@
   opacity: 1;
   position:relative;
   top:30%;
-  
+  z-index:-99; 
 }
 #Events .container{
   color: #000000;
 }
+
+#gmap_canvas{
+    position : relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 body {  
   background-color: #212121;
