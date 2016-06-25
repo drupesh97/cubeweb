@@ -1,5 +1,5 @@
-
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 	<meta charset="utf-8">
@@ -55,7 +55,7 @@ function change_section(name) {
                     <h3 style="color: #4dadfe;font-family: SSFD;font-weight: 100;font-size:42px;">PRESENTS</h3><br><br>
                     <img src="./img/logocut1.gif" height="100" width="80">
                     <h1 style="z-index:9999;color: #ffffff;font-family: 'Bree Serif', serif;font-weight: bold;font-size: 45px;">SSN CUBE OPEN 2016<br><br>
-            <a href="#About" id="img-to-click" class="next_section" style="z-index:9991; margin-top:-15px;"><!--span class="glyphicon glyphicon-menu-down" style="color: #ffffff;" ></span--></a>
+            <a href="#About" id="img-to-click" class="next_section" onclick="change_section('About')" style="z-index:9991; margin-top:-15px;"><!--span class="glyphicon glyphicon-menu-down" style="color: #ffffff;" ></span--></a>
             </div>                    
         </div>     
     </div>     
@@ -85,8 +85,8 @@ function change_section(name) {
                 </video>
             </div>
                 <h2 style="" class="up">About the Competition</h2>
-                <p align="center" class="up-second" style="width: 80%;margin: auto;" ><br><br>SSN CUBE OPEN 2016 is organised by Department of Mathematics, <br>SSN College of Engineering and will be held on 5-6 August 2016. <br><br>The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should
-                be familiar with the WCA <a class="WCAreg" href="https://worldcubeassociation.org/regulations"><u>regulations</u></a>.<br><br>
+                <p align="center" class="up-second" style="width: 90%;margin: auto;" ><br><br>SSN CUBE OPEN 2016 is organised by Department of Mathematics, <br>SSN College of Engineering and will be held on 5-6 August 2016. <br><br>The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should
+                be familiar with the WCA <a class="WCAreg" target="_blank" href="https://worldcubeassociation.org/regulations"><u>regulations</u></a>.<br><br><br>
                 </p>
                     <div id="countdown">
                         <iframe id="cntdn" width="220" height="240" src="https://w2.countingdownto.com/1422998" frameborder="0" scrolling="no" seamless="seamless" style="color: #212121;text-algin: center;overflow-y: hidden;position: relative   ;"></iframe>
@@ -180,13 +180,19 @@ function change_section(name) {
 
     </section>
 
-    <section class="page_section" id="Schedule">  
+    <section class="page_section" id="Schedule" style="height: auto;">  
         <header>
             <div class="container">
             	<h2 style="" class="up">Schedule</h2>
             	<br><br><br>
-            	<p class="up-second" style="">
-            		Link for the complete schedule : <a href="www.google.com"><u>Coming Soon</u></a>
+                <div class="imgcntr" style="margin: auto;align: center;display: inline-block">
+                    <img src="./img/aug5.jpg" height="150" width="110" style="border-radius: 9px;">
+                    &nbsp;&nbsp;
+                    <img src="./img/aug6.jpg" height="150" width="110" style="border-radius: 9px;">
+                </div> 
+                <p class="up-second" style="font-size: 30px;">
+                <br><br><br>
+            		Link for the complete schedule : <a target="_blank" href="https://drive.google.com/open?id=0B-qeAhj4yNFYVnRaa3A1UWhXa0E"><u>Schedule</u></a>
 				</p>
             </div>               
         </header>
@@ -208,10 +214,10 @@ function change_section(name) {
             <div class="container">
             	<h2 style="" class="up">Registration</h2>
             	<br><br>
-            	<p class="up-second" style="width: 65%;margin: auto;">
+            	<p class="up-second" style="width: 70%;margin: auto;">
                     <span class="glyphicon glyphicon-triangle-right" style="color: #e6563e;" ></span>
             		Register on WCA website. <br>
-                    <a href="https://worldcubeassociation.org"> https://worldcubeassociation.org</a><br><br>
+                    <a target="_blank" href="https://worldcubeassociation.org"> https://worldcubeassociation.org</a><br><br>
 					Make an account if you do not have one.<br> Make sure
 					you use your WCA ID and don&#39;t use any initials.
 					<br><br></p>
@@ -231,41 +237,41 @@ function change_section(name) {
      <section class="page_section" id="Contact" style="height: auto;">  
         <header>
             <div class="container">
-                <h2 style="" class="up">Student Coordinators    </h2>
+                <h2 style="" class="up">Student Coordinators </h2>
                 <br>
                     <p class="up-second" style="margin: auto;text-align: center;"> You can contact us at the following numbers for any queries.</p> <br>
                 <p class="up-second" style="text-align: center;">
                        <br>
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
                        Vishwanath Jeyaraman :
-                       <span class="glyphicon glyphicon-phone" style="color: #ffffff;" ></span>
-                       +91 9791042330 
-                        <span class="glyphicon glyphicon-apple" style="color: #ffffff;" ></span>
+                       <span class="glyphicon glyphicon-earphone" style="color: #ffffff;" ></span>
+                       +91 9791042330 &nbsp&nbsp
+                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
                        <a href="mail:vishwanath.jeyaraman@gmail.com"> vishwanath.jeyaraman@gmail.com</a> <br><br>
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
                         Sylesh Kumar : 
-                       <span class="glyphicon glyphicon-phone" style="color: #ffffff;" ></span>
-                       +91 9176063410 
-                       <span class="glyphicon glyphicon-apple" style="color: #ffffff;" ></span>
+                       <span class="glyphicon glyphicon-earphone" style="color: #ffffff;" ></span>
+                       +91 9176063410  &nbsp&nbsp
+                       <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
                        <a href="mail:Syleshkumar1996@gmail.com">  Syleshkumar1996@gmail.com</a> <br><br></p>
                        <h2 style="" class="up">Faculty Coordinators </h2>
                        <br>
                        <p class="up-second" style="text-align: center;">
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
-                        Dr S.Narasimman : 
-                        <span class="glyphicon glyphicon-apple" style="color: #ffffff;" ></span>
+                        Dr S.Narasimman : &nbsp;
+                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
                        <a href="mail:narasimmans@ssn.edu.in">  narasimmans@ssn.edu.in</a> <br><br>
 
                        <p class="up-second" style="text-align: center;">
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
-                        Dr R.Sundareswaran : 
-                        <span class="glyphicon glyphicon-apple" style="color: #ffffff;" ></span>
+                        Dr R.Sundareswaran : &nbsp;
+                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
                        <a href="mail:SundareswaranR@ssn.edu.in">SundareswaranR@ssn.edu.in</a> <br><br>
 
                        <p class="up-second" style="text-align: center;">
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
-                        Dr M.Sundarakannan : 
-                        <span class="glyphicon glyphicon-apple" style="color: #ffffff;" ></span>
+                        Dr M.Sundarakannan : &nbsp;
+                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
                        <a href="mail:sundarakannanm@ssn.edu.in">sundarakannanm@ssn.edu.in</a> <br>
                        
 
@@ -274,7 +280,7 @@ function change_section(name) {
         </header>
         <footer style="background-color: #333;margin-top: -15px;">
             <div class="up-second" style="text-align: center;color: #81a0ff;"> 
-                <div class="copyright">&copy;SSN CUBE OPEN 2016. All rights reserved.</div>
+                <div class="copyright">&copy; SSN CUBE OPEN 2016. All rights reserved.</div>
             </div>     
         </footer>
     </section>  
