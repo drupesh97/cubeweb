@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -10,29 +9,7 @@
     <link href="a.css" rel="stylesheet" type="text/css" />
     <link href="w3.css" rel="stylesheet" type="text/css" />
 	<script src="./jquery.min.js"></script>
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
-      }
-    }
-  });
-});
 
-cur = "About"
-function change_section(name) {
-    $("#x" + cur).removeClass("current");
-    $("#x" + name).addClass("current");
-    cur = name;
-}
-</script>	
 
 </head>
 <body>
@@ -47,15 +24,19 @@ function change_section(name) {
                 <div class="gradient-overlay overlay"></div>
                 <div class="home_content" style="">                    
                     <br><br>
-                    <h2 style="font-family: SSFD;color: #4dadfe;" class="lpf">  SSN COLLEGE OF ENGINEERING </h2>
-                    <br><br>
-                    <h2 style="font-family: Merriweather;font-style: bold ;font-weight: bold;font-size: 35px;color: #ffffff;"> DEPARTMENT OF MATHEMATICS </h2>
+                    <div class="first" style="margin: auto;align: left;display: inline-block;position: relative;top: 15px;width: 100%;">
+                        <img src="./img/ssn_alpha.gif" style="float: left;align: auto;position: relative;left: 20%;top: 3px;" height="55px;" >
+                        <h2 style="font-family: SSFD;color: #4dadfe;margin: 0px;" class="lpf">COLLEGE OF ENGINEERING </h2>
+                        <br>
+                    </div>
+                     <h2 style="font-family: Jura;font-style: bold ;font-weight: bold;font-size: 45px;color: #FFA500;">SSN MATH CLUB</h2><br>
+                    <h2 style="font-family: Merriweather;font-style: bold ;font-weight: bold;font-size: 35px;color: #ffffff;position: relative;top: -15px;"> DEPARTMENT OF MATHEMATICS </h2>
                     <br>
 
-                    <h3 style="color: #4dadfe;font-family: SSFD;font-weight: 100;font-size:42px;">PRESENTS</h3><br><br>
-                    <img src="./img/logocut1.gif" height="100" width="80">
+                    <h3 style="color: #4dadfe;font-family: SSFD;font-size:42px;position: relative;top: -15px;">PRESENTS</h3><br>
+                    <img src="./img/logocut1.gif" height="100" width="80" style="position: relative;top: -15px;">
                     <h1 style="z-index:9999;color: #ffffff;font-family: 'Bree Serif', serif;font-weight: bold;font-size: 45px;">SSN CUBE OPEN 2016<br><br>
-            <a href="#About" id="img-to-click" class="next_section" onclick="change_section('About')" style="z-index:9991; margin-top:-15px;"><!--span class="glyphicon glyphicon-menu-down" style="color: #ffffff;" ></span--></a>
+            <a href="#About" id="img-to-click" class="next_section" onclick="change_section('About')" style="z-index:9991; margin-top:-18px;"><!--span class="glyphicon glyphicon-menu-down" style="color: #ffffff;" ></span--></a>
             </div>                    
         </div>     
     </div>     
@@ -64,13 +45,13 @@ function change_section(name) {
                <a href="#ppp"><img class="logo_small" src="img/logocut1.gif" alt="" height="46" style="float:left;"></a>
                 <nav class="menu1" style="width=100%;">
                     <ul class="snip1502">
-                            <li id="xAbout"><a onclick="change_section('About')" href="#About" data-hover="About">About</a></li>
-                            <li id="xEvents"><a onclick="change_section('Events')" href="#Events" data-hover="Events">Events</a></li>
-                            <li id="xSchedule"><a onclick="change_section('Schedule')" href="#Schedule" data-hover="Schedule">Schedule</a></li>
-                            <li id="xVenue"><a onclick="change_section('Venue')" href="#Venue" data-hover="Venue">Venue</a></li>
-                            <li id="xRegistration"><a onclick="change_section('Registration')" href="#Registration" data-hover="Registration">Registration</a></li>
-                            <li id="xSponsors"><a onclick="change_section('Sponsors')" onclick="change_section('About')" href="#Sponsors" data-hover="Sponsors">Sponsors</a></li>
-                            <li id="xContact" style="padding-right: 10px;"><a onclick="change_section('Contact')" href="#Contact" data-hover="Contact us">Contact us</a></li>
+                            <li id="xAbout"><a  href="#About" data-hover="About">About</a></li>
+                            <li id="xEvents"><a  href="#Events" data-hover="Events">Events</a></li>
+                            <li id="xSchedule"><a href="#Schedule" data-hover="Schedule">Schedule</a></li>
+                            <li id="xVenue"><a href="#Venue" data-hover="Venue">Venue</a></li>
+                            <li id="xRegistration"><a href="#Registration" data-hover="Registration">Registration</a></li>
+                            <li id="xSponsors"><a href="#Sponsors" data-hover="Sponsors">Sponsors</a></li>
+                            <li id="xContact" style="padding-right: 10px;"><a href="#Contact" data-hover="Contact us">Contact us</a></li>
                     </ul>
                 </nav>
          </div>
@@ -85,8 +66,8 @@ function change_section(name) {
                 </video>
             </div>
                 <h2 style="" class="up">About the Competition</h2>
-                <p align="center" class="up-second" style="width: 90%;margin: auto;" ><br><br>SSN CUBE OPEN 2016 is organised by Department of Mathematics, <br>SSN College of Engineering and will be held on 5-6 August 2016. <br><br>The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should
-                be familiar with the WCA <a class="WCAreg" target="_blank" href="https://worldcubeassociation.org/regulations"><u>regulations</u></a>.<br><br><br>
+                <p align="center" class="up-second" style="width: 90%;margin: auto;  line-height: 28px;" ><br><br>SSN CUBE OPEN 2016 is organised by Department of Mathematics, <br>SSN College of Engineering , Chennai and will be held on August 05 - 06 , 2016. <br><br>The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should
+                be familiar with the WCA <a class="WCAreg" target="_blank" href="https://worldcubeassociation.org/regulations" style="color: #337ab7;"><u>regulations</u></a>.<br><br><br>
                 </p>
                     <div id="countdown">
                         <iframe id="cntdn" width="220" height="240" src="https://w2.countingdownto.com/1422998" frameborder="0" scrolling="no" seamless="seamless" style="color: #212121;text-algin: center;overflow-y: hidden;position: relative   ;"></iframe>
@@ -192,17 +173,25 @@ function change_section(name) {
                 </div> 
                 <p class="up-second" style="font-size: 30px;">
                 <br><br><br>
-            		Link for the complete schedule : <a target="_blank" href="https://drive.google.com/open?id=0B-qeAhj4yNFYVnRaa3A1UWhXa0E"><u>Schedule</u></a>
+            		Link for the complete schedule : <a target="_blank" style="color: #337ab7;" href="https://drive.google.com/open?id=0B-qeAhj4yNFYVnRaa3A1UWhXa0E"><u>Schedule</u></a>
 				</p>
             </div>               
         </header>
     </section>	
 
-    <section class="page_section" id="Venue">  
+    <section class="page_section" id="Venue" style="height: auto;">  
          <header>
              <div class="container">
                  <h2 style="" class="up">Venue</h2>
-                 <br><br><br>
+                 <p class="up-second" style="font-size: 20px;">
+                        SSN College and Enginerring
+                        Old Mahabalipuram Road, Kalavakkam, Tamil Nadu 603110, India .<br><br>
+                        Airport : 36 km from Anna international airport <br>
+                        Railway station : 44 km from Chennai central railway station <br>
+                        Bus Depot : 6 Km from Kelambakkam Bus Depot<br><br>
+                        Visit the College's <a target="_blank" style="color: #337ab7;" href="http://www.ssn.edu.in/"><u>Website</u></a> for more information .
+                 </p>
+                 <br>
                  <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div id='gmap_canvas' style='width:900px; height:300px;width=80%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script class="map"   type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(12.75099805176065,80.1970806025391),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.75099805176065,80.1970806025391)});infowindow = new google.maps.InfoWindow({content:'<strong>SSN College and Enginerring</strong><br>Old Mahabalipuram Road, Kalavakkam, Tamil Nadu 603110, India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>    
 
              
@@ -216,8 +205,8 @@ function change_section(name) {
             	<br><br>
             	<p class="up-second" style="width: 70%;margin: auto;">
                     <span class="glyphicon glyphicon-triangle-right" style="color: #e6563e;" ></span>
-            		Register on WCA website. <br>
-                    <a target="_blank" href="https://worldcubeassociation.org"> https://worldcubeassociation.org</a><br><br>
+            		Register on WCA website. <br><br>
+                    <a target="_blank" style="color: #337ab7;" href="https://worldcubeassociation.org"> <u>https://worldcubeassociation.org</u></a><br><br>
 					Make an account if you do not have one.<br> Make sure
 					you use your WCA ID and don&#39;t use any initials.
 					<br><br></p>
@@ -245,35 +234,34 @@ function change_section(name) {
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
                        Vishwanath Jeyaraman :
                        <span class="glyphicon glyphicon-earphone" style="color: #ffffff;" ></span>
-                       +91 9791042330 &nbsp&nbsp
+                       +91 9791042330 &nbsp;&nbsp;
                         <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
-                       <a href="mail:vishwanath.jeyaraman@gmail.com"> vishwanath.jeyaraman@gmail.com</a> <br><br>
+                       <a href="mail:vishwanath.jeyaraman@gmail.com"> &nbsp;vishwanath.jeyaraman@gmail.com</a> <br><br>
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
                         Sylesh Kumar : 
                        <span class="glyphicon glyphicon-earphone" style="color: #ffffff;" ></span>
-                       +91 9176063410  &nbsp&nbsp
+                       +91 9176063410  &nbsp;&nbsp;
                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
-                       <a href="mail:Syleshkumar1996@gmail.com">  Syleshkumar1996@gmail.com</a> <br><br></p>
+                       <a href="mail:Syleshkumar1996@gmail.com">  &nbsp;Syleshkumar1996@gmail.com</a> <br><br></p>
                        <h2 style="" class="up">Faculty Coordinators </h2>
                        <br>
                        <p class="up-second" style="text-align: center;">
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
-                        Dr S.Narasimman : &nbsp;
+                        Dr. M. Sundarakannan : &nbsp;
                         <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
-                       <a href="mail:narasimmans@ssn.edu.in">  narasimmans@ssn.edu.in</a> <br><br>
+                       <a href="mail:sundarakannanm@ssn.edu.in">&nbsp;sundarakannanm@ssn.edu.in</a> <br><br>
+
+                        <p class="up-second" style="text-align: center;">
+                        <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
+                        Dr. R. Sundareswaran : &nbsp;
+                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
+                       <a href="mail:SundareswaranR@ssn.edu.in">&nbsp;SundareswaranR@ssn.edu.in</a> <br><br>
 
                        <p class="up-second" style="text-align: center;">
                         <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
-                        Dr R.Sundareswaran : &nbsp;
+                        Dr. S. Sampath Kumar : &nbsp;
                         <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
-                       <a href="mail:SundareswaranR@ssn.edu.in">SundareswaranR@ssn.edu.in</a> <br><br>
-
-                       <p class="up-second" style="text-align: center;">
-                        <span class="glyphicon glyphicon-star-empty" style="color: #e6563e;" ></span>
-                        Dr M.Sundarakannan : &nbsp;
-                        <span class="glyphicon glyphicon-envelope" style="color: #ffffff;" ></span>
-                       <a href="mail:sundarakannanm@ssn.edu.in">sundarakannanm@ssn.edu.in</a> <br>
-                       
+                       <a href="mail:narasimmans@ssn.edu.in">  &nbsp;sampathkumars@ssn.edu.in</a> <br>
 
                 </p>
             </div>               
@@ -284,6 +272,28 @@ function change_section(name) {
             </div>     
         </footer>
     </section>  
+     <script>
+        cur = "About"
+        function change_section(name) {
+            $("#x" + cur).removeClass("current");
+            $("#x" + name).addClass("current");
+            cur = name;
+            var target = $('#' + name);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 900);
+                return false;
+              }
+        }
+
+        $('li[id^=x]').click(function(){
+            element_name = this.id.slice(1);
+            change_section(element_name);
+        });
+
+    </script>
 
 </body>
 </html>
