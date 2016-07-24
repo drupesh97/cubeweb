@@ -258,11 +258,12 @@
   color: #000000;
 }
 #grid{
-  height: 360px;
+  height: 365px;
   width:20%;
   border-radius: 23px;
   float: left;
-  margin: 25px;
+  padding: 10px;
+  margin: 35px;
 
 }
 .eventcntr{
@@ -281,6 +282,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.watermark img{
+  position: fixed;
+  top: 40%; /* or whatever */
+  left: 40%; /* or whatever, position according to taste */
+  opacity: 0.1; /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
+  filter:alpha(opacity=10); /* for <= IE 8 */
+  z-index: -10000000;
+  height: 100px;
 }
 
 h1{
